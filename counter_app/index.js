@@ -1,10 +1,20 @@
-let a = 0;
+let saveEl = document.getElementById("save-el");
+let totalEl = document.getElementById("total-el");
+let count = 0;
+let total = 0;
 function increase() {
-    a++;
-    document.getElementById("Count").innerText = a;
+    count++;
+    document.getElementById("Count").innerText = count;
     console.log("Button clicked");
 }
 
 function save() {
-    console.log(a)
+    // console.log(count)
+    let record = count + " - "
+    saveEl.textContent += record;
+   
+        total +=count;
+    totalEl.innerText = total;
+    count = 0;
+    document.getElementById("Count").innerText = count;
 }
