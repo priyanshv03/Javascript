@@ -76,8 +76,17 @@
 // }
 // console.log(person.age)
 
-let a = window; 
+// let a = window; 
 
-a.alert("hello")
-a = prompt('this will distripy');
-console.log(a);
+// a.alert("hello")
+// a = prompt('this will distripy');
+// console.log(a);
+
+let a = document.all;
+// Array.from(a).forEach(function (element) {
+//     console.log(element);
+// })
+    
+a = document.images;
+a=document.scrip ts
+console.log(a)
